@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>WANG GUI 22224035Building Muscles</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script type='text/javascript' src='js/mobile.js'></script>
+	<script>
+		function displayGreeting() {
+			const userName = document.getElementById('userName').value;
+			if (userName.trim() !== '') {
+				document.getElementById('greetingMessage').innerText = `Hello, ${userName}! Welcome to our website!`;
+			} else {
+				alert("Please enter your name!");
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="header">
+		<h1><a href="index.html">Building Muscles<span>100% Natural</span></a></h1>
+		<ul id="navigation">
+			<li class="current">
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li>
+				<a href="classes.html">Classes</a>
+				<ul>
+					<li>
+						<a href="instructors.html">Instructors</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+			<li>
+				<a href="blog.html">You need to know</a>
+			</li>
+		</ul>
+	</div>
+	<center>
+		<div>
+			<h1>Let's play a game, tips: this is my javascript</h1>
+    		<button onclick="playGame()">Try one try</button>
+		</div>
+		<script>
+			// Generate a random number between 1 and 100
+			const randomNumber = Math.floor(Math.random() * 100) + 1;
+	
+			// Game function
+			function playGame() {
+				let guess = prompt("Guess a number between 1 and 100:");
+	
+				while (guess !== null) { // Check if user pressed 'Cancel' (guess will be null)
+					if (guess == randomNumber) {
+						alert("Congratulations! You guessed it right. The number was: " + randomNumber);
+						return; // End the game
+					} else if (guess < randomNumber) {
+						guess = prompt("Too low! Try again:");
+					} else {
+						guess = prompt("Too high! Try again:");
+					}
+				}
+	
+				alert("Game canceled. See you next time!");
+			}
+		</script>
+		<div>
+			<h2>Enter Your Name:</h2>
+			<input type="text" id="userName" placeholder="Your name here">
+			<button onclick="displayGreeting()">Submit</button>
+			<p id="greetingMessage" style="font-weight: bold; font-size: 20px; margin-top: 10px;"></p>
+		</div>
+	</center>
+	<div id="body">
+		<div id="tagline">
+			<h1>Welcome</h1>
+			<p>
+				Whatever you go, go with all your heart.
+			</p>
+			<br>
+			<br>
+			<p style="font-weight: bold;margin: 0; padding: 12px 0 0; text-align: center; font-size: 20px; margin-top: 5px;">
+				<marquee style="font-size: 50px; font-weight: bold;">Tips: I added two JSS files, modified hyperlinks, and much more!</marquee>
+
+				home page：
+				1I add two JSS file for welcome 
+				2Add a guessing game for numbers.
+				3I changed the colors, fonts, and images of all pages in CSS.
+				4I have changed all hyper links for faster contact with me
+				5I have modified the header and footer
+				6add two buttons for click the game and add welcome.
+
+				The changes of all the pages：
+
+				about： Introduction to Fitness Clubs
+
+				classes：Some course information about muscle building, from beginner to advanced
+
+				instructors：Provide some pro athletes as learning objects.
+
+				contact：Click 'send' on the contact page to auto redirect to your email and send the message to me
+
+				You need to know：Three knowledge about muscle building
+			</p>
+	 		
+		</div>
+		<img src="images/logo.jpg" alt="lady doing yoga" class="figure">
+	</div>
+	
+	<div id="footer">
+		<div>
+			<span>WANG GUI 22224035</span>
+		</div>
+		<div id="connect">
+			<a href="https://www.facebook.com/Bumstead1995/" id="facebook" target="_blank">Facebook</a>
+			<a href="https://x.com/nottherealcbum/" id="twitter" target="_blank">Twitter</a>
+			<a href="https://cshperspectives.cshlp.org/content/4/2/a008342.short/" id="googleplus" target="_blank">Google&#43;</a>
+			<a href="https://www.pinterest.com/pin/715368722092826279/" id="pinterest" target="_blank">Pinterest</a>
+		</div>
+	</div>
+</body>
+</html>
